@@ -17,7 +17,7 @@
     ?>
     <div class="main">
         <div class="photo">
-            <img src = "images/IMG_2413_cropped.jpg" alt="photo of the author">
+            <img src = "images/IMG_2413_cropped.jpg" alt="photo of the student">
         </div>
         <div class="focus">
         <h2>Sarah Standish</h2>
