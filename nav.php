@@ -1,6 +1,6 @@
 <?php
 
-    function nav($index_file_path, $week2_file_path) {
+    function nav($index_file_path, $week2_file_path, $week3_file_path) {
 
     echo 
         "<nav>
@@ -23,8 +23,7 @@
             <div class=\"nav-button dropdown-button\">Assignments</div>
             <div class=\"dropdown\">
                 <p><a href=\"" . $week2_file_path . "mamp.php\">MAMP</a></p>
-                <p><a href=\"\">Portal Page</a></p>
-                <p><a href=\"\">Using a Switch</a></p>
+                <p><a href=\"" . $week3_file_path . "switch.php\">Using a Switch</a></p>
                 <p><a href=\"\">Troubleshooting</a></p>
                 <p><a href=\"\">Group Adder</a></p>
                 <p><a href=\"\">Calculating Form</a></p>

@@ -21,10 +21,10 @@
 <?php
 include '../../nav.php';
 include '../../header.php';
-nav("../../", "");
+nav("../../", "", "../week3/");
 echo $header;
 ?>
-<h2>MAMP installation</h2>
+<h2 class="page-heading">MAMP installation</h2>
 <div class="main">
     <img src="../../images/localhost installation.JPG" alt="MAMP intallation">
     <img src="../../images/mamp_error_display.JPG" alt="error message">

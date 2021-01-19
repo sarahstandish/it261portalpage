@@ -12,7 +12,7 @@
     <?php
     include 'header.php';
     include 'nav.php';
-    nav("", "weeks/week2/");
+    nav("", "weeks/week2/", "weeks/week3/");
     echo $header;
     ?>
     <div class="main">
