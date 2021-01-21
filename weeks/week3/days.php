@@ -3,72 +3,44 @@ $days = [
     'sunday' => [
         'day_name' => 'Sunday',
         'background_color' => '#7FB069',
-        'text_color' => '#FFCA3A',
-        'accent_color' => '#FBFBFF',
-        'recipe_name' => 'Spiced Chickpea Stew With Coconut and Turmeric',
-        'recipe_url' => 'https://cooking.nytimes.com/recipes/1019772-spiced-chickpea-stew-with-coconut-and-turmeric',
-        'image_url' => '../../images/chickpea_stew.jpg',
-        'descriptive_text' => "On Sundays, I always like to cook something bigger than I can eat in one night. Having the leftovers the next day for lunch always makes Monday just a tiny bit better! I can't think of a more delicious recipe for a wintry Sunday night than this hearty chickpea stew. It's vegetarian enough to start the week with a clean conscience and filling enough to keep that satisfied weekend feeling going all evening.<br><br><a href='https://cooking.nytimes.com/recipes/' target='_blank'>Image from NYT Cooking; read more and cook this recipe there!</a>"
+        'image_url' => '/it261/weeks/week3/images/sunday.jpg',
+        'descriptive_text' => "The Arab world image of the day for Sunday is these friends enjoying a trip to Europe."
     ],
     'monday' => [
         'day_name' => 'Monday',
         'background_color' => '#EAEFD3',
-        'accent_color' => '#DCC48E',
-        'text_color' => '#488B49',
-        'recipe_name' => 'Pork Meatballs with Ginger and Fish Sauce',
-        'recipe_url' => 'https://cooking.nytimes.com/recipes/1019764-pork-meatballs-with-ginger-and-fish-sauce',
-        'image_url' => '../../images/pork_meatballs.jpg',
-        'descriptive_text' => "On Monday night, you want something a little bit easier to cook, something you can throw in the oven to roast while you finish responding to the last of the work emails that built up over the weekend. Look no further than this quick and easy pork meatball dish: it comes together in 10 minutes, bakes for 20, and doesn't need anything more than a simple white rice to bulk it up.<br><br><a href='https://cooking.nytimes.com/recipes/1019764-pork-meatballs-with-ginger-and-fish-sauce' target='_blank'>Image from NYT Cooking; read more and cook this recipe there!</a>"
+        'image_url' => '/it261/weeks/week3/images/monday.jpg',
+        'descriptive_text' => "The Arab world image of the day for Monday is this multigenerational family."
     ],
     'tuesday' => [
         'day_name' => 'Tuesday',
         'background_color' => '#FBFFFE',
-        'text_color' => '#95190C',
-        'accent_color' => '#E6AF2E',
-        'recipe_name' => 'Caramelized Shallot Pasta',
-        'recipe_url' => 'https://cooking.nytimes.com/recipes/1020830-caramelized-shallot-pasta',
-        'image_url' => '../../images/caramelized_shallot_pasta.jpg',
-        'descriptive_text' => "Yes, it's Tuesday night, and it's also the recipe that almost broke the Internet at the start of the pandemic: Caramelized Shallot Pasta (also known as #thepasta). Yes, it's a little more involved than last night's recipe since it <em>does</em> involve 20 straight minutes of sauteeing shallots, but tonight, you can handle it.<br><br><a href='https://cooking.nytimes.com/recipes/1020830-caramelized-shallot-pasta' target='_blank'>Image from NYT Cooking; read more and cook this recipe there!</a>"
+        'image_url' => '/it261/weeks/week3/images/tuesday.jpg',
+        'descriptive_text' => "The Arab world image of the day for Tuesday is this Egyptian family visiting a car show."
     ],
     'wednesday' => [
         'day_name' => 'Wednesday',
-        'background_color' => 'FBFFFE',
-        'text_color' => '#6D6A75',
-        'accent_color' => '#e56d73',
-        'recipe_name' => '',
-        'recipe_url' => '',
-        'image_url' => '',
-        'descriptive_text' => 'Here is some sample tex' 
+        'background_color' => '#2A9134',
+        'image_url' => '/it261/weeks/week3/images/wednesday.jpg',
+        'descriptive_text' => "The Arab world image of the day for Wednesday is this Palestinian family eating breakfast."
     ],
     'thursday' => [
-        'day_name' => 'Tuesday',
-        'background_color' => '',
-        'text_color' => '',
-        'accent_color' => '',
-        'recipe_name' => '',
-        'recipe_url' => '',
-        'image_url' => '',
-        'descriptive_text' => 'Here is some sample tex' 
+        'day_name' => 'Thursday',
+        'background_color' => '#F1E3F3',
+        'image_url' => '/it261/weeks/week3/images/thursday.jpg',
+        'descriptive_text' => "The Arab world image of the day for Thursday is this tea tray."
     ],
     'friday' => [
-        'day_name' => 'Tuesday',
-        'background_color' => '',
-        'text_color' => '',
-        'accent_color' => '',
-        'recipe_name' => '',
-        'recipe_url' => '',
-        'image_url' => '',
-        'descriptive_text' => 'Here is some sample tex' 
+        'day_name' => 'Friday',
+        'background_color' => '#E7E5DF',
+        'image_url' => '/it261/weeks/week3/images/friday.jpg',
+        'descriptive_text' => "The Arab world image of the day for Friday is City Mall in Amman, Jordan."
     ],
     'saturday' => [
-        'day_name' => 'Tuesday',
-        'background_color' => '',
-        'text_color' => '',
-        'accent_color' => '',
-        'recipe_name' => '',
-        'recipe_url' => '',
-        'image_url' => '',
-        'descriptive_text' => 'Here is some sample tex' 
-    ]
+        'day_name' => 'Saturday',
+        'background_color' => '#BBBBBF',
+        'image_url' => '/it261/weeks/week3/images/saturday.jpg',
+        'descriptive_text' => "The Arab world image of the day for Saturday is these Qatari high school students working on an art project."
+    ],
 ];
 ?>

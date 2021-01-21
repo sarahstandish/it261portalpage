@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Sarah Standish</title>
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="/it261/css/styles.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Syne:wght@400;500&display=swap" rel="stylesheet"> 
 </head>
@@ -12,12 +12,12 @@
     <?php
     include 'header.php';
     include 'nav.php';
-    nav("", "weeks/week2/", "weeks/week3/");
+    nav();
     echo $header;
     ?>
     <div class="main">
         <div class="photo">
-            <img src = "images/IMG_2413_cropped.jpg" alt="photo of the student">
+            <img src = "/it261/images/IMG_2413_cropped.jpg" alt="photo of the student">
         </div>
         <div class="focus">
         <h2>Sarah Standish</h2>

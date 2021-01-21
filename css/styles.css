@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    --background-color: #20063B;
+    --background-color: #20063B; 
     --text-color: #97949E;
     --accent-color-1: #074F57;
     --title-font: 'Syne', sans-serif;
@@ -14,7 +14,7 @@
     display: none;
     position: absolute;
     z-index: 1;
-    font-size: 1.5em
+    font-size: 1.25em
 }
 
 .dropdown a {
@@ -44,7 +44,7 @@
 .dropdown-container:hover .dropdown {
     display: block;
     background-color: var(--accent-color-1);
-    color: var(--background-color);
+    color: var(--text-color);
 }
 
 .dropdown-container {
@@ -83,6 +83,14 @@ nav a {
     display: inline-block;
     width: 100%;
 }
+
+.weekname {
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 1.1em;
+    border-bottom: 3px solid var(--text-color);
+    border-top: 3px solid var(--text-color);
+    }
 
 body {
     background-color: var(--background-color);
