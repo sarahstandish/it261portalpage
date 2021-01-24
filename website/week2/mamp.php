@@ -19,9 +19,8 @@
 <body>
 
 <?php
-include '../../nav.php';
-include '../../header.php';
-nav();
+include '../../includes/nav.php';
+include '../../includes/header.php';
 echo $header;
 ?>
 <h2 class="page-heading">MAMP installation</h2>
@@ -31,9 +30,7 @@ echo $header;
 </div>
 
 <?php
-include '../../footer.php';
+include '../../includes/footer.php';
 footer();
 ?>
-
-
 </body>

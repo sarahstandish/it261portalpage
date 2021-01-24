@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
 include 'days.php';
+date_default_timezone_set('America/Los_Angeles');
 if (isset($_GET['today'])) {
     $today = $_GET['today'];
 } else {
@@ -82,9 +83,8 @@ switch ($today) {
 <body>
 
 <?php
-include '../../nav.php';
-include '../../header.php';
-nav();
+include '../../includes/nav.php';
+include '../../includes/header.php';
 echo $header;
 ?>
 <h2><?php echo $day['day_name'] . ": ";
@@ -103,7 +103,7 @@ echo "<a href='$day[recipe_url]' target='_blank'>" . $day['recipe_name'] . "</a>
 </div>
 
 <?php
-include '../../footer.php';
+include '../../includes/footer.php';
 footer();
 ?>
 

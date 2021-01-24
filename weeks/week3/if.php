@@ -21,5 +21,9 @@
 }
     echo "<br>";
     echo "My compensation is $" . total_compensation(200000, 800000);
+    echo "<br>";
 
+    //echo $_SERVER["PHP_SELF"];
+    echo "<br>";
+    //echo $_SERVER['REQUEST_URI'];
 ?>
