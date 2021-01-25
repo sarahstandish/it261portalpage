@@ -44,7 +44,7 @@ $nav2 = [
     "About" => 'about.php',
     "Gallery" => 'gallery.php',
     "Contact" => 'contact.php',
-    "Gallery" => 'gallery.php',
+    "Daily" => 'daily.php',
 ];
 
 switch(THIS_PAGE) {
