@@ -11,7 +11,7 @@
 
     <?php
     include '../includes/header.php';
-    include '../includes/nav.php';
+    include '../includes/nav2.php';
     echo $header;
     ?>
     <div class="main">

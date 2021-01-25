@@ -39,6 +39,14 @@ $week3 = [
     'date.php' => '/it261/weeks/week3/date.php',
 ];
 
+$nav2 = [
+    "Home" => '/it261/website/index.php',
+    "About" => 'about.php',
+    "Gallery" => 'gallery.php',
+    "Contact" => 'contact.php',
+    "Gallery" => 'gallery.php',
+];
+
 switch(THIS_PAGE) {
     case '/it261/index.php':
 
