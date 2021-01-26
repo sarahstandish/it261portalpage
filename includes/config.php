@@ -19,7 +19,7 @@ $assignments = [
 
 function week_menu($array) {
     foreach($array as $name => $url) {
-        echo "<p><a href='$url' target='_blank'>$name</a></p>";
+        echo "<p><a href='$url'>$name</a></p>";
     }
 }
 
