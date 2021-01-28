@@ -1,0 +1,24 @@
+<!--Added closing php tag on line 12-->
+<!--Removed misplaced closing php tag on line 28-->
+<!--Added missing <!DOCTYPE html>-->
+<!--Added language attribute to html-->
+<!--Added stylesheet reference to html-->
+<!--Removed misplaced / from opening form tag -->
+<!--Added missing quotation marks to input value-->
+<!--Corrected caluclation for $mytotal; should be = not -= -->
+<!--Fixed quotation marks & string interpolation in h2-->
+<!--Added closing h2 tag-->
+<!--Fixed quotation marks and string interpolation in presentation of answer-->
+<!--Added closing semicolon line 9 to reset page instructions-->
+<!--Removed //adder-wrong comment-->
+<!--Added closing </p> tag to reset page instructions-->
+<!--Got rid of frowny face at bottom of page-->
+<!--Changed Num1 to num1 in input-->
+<!--Changed Num2 to num1 in $mytotal calc -->
+<!--Added condition that num2 must be set to submit form-->
+<!--Fixed label html tags-->
+<!--Added for attributes to labels-->
+<!--Added poast method to form -->
+<!--Added validation to check if values submitted are numeric -->
+<!--Added validation to check if either field is empty -->
+<!--Added additional styles-->

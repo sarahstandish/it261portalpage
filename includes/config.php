@@ -6,7 +6,7 @@ $assignments = [
     'MAMP' =>
     '/it261/website/week2/mamp.php',
     'Using a Switch' => '/it261/website/week3/switch.php',
-    'Troubleshooting' => '',
+    'Troubleshooting' => '/it261/website/week4/adder.php',
     'Group Adder' => '',
     'Calculating Form' => '',
     'Group Currency Form' => '','Emailable Form' => '',
@@ -39,6 +39,11 @@ $week3 = [
     'date.php' => '/it261/weeks/week3/date.php',
 ];
 
+$week4 = [
+    'form1.php' => '/it261/weeks/week4/form1.php',
+    'form2.php' => '/it261/weeks/week4/form2.php',
+];
+
 $nav2 = [
     "Home" => '/it261/website/index.php',
     "About" => 'about.php',
@@ -49,7 +54,6 @@ $nav2 = [
 
 switch(THIS_PAGE) {
     case '/it261/index.php':
-
 }
 
 ?>
