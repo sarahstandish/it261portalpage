@@ -62,7 +62,7 @@
     <?php include '../../includes/nav.php' ?>
     <?php include '../../includes/header.php'; echo $header ?>
     <h2>Adder.php</h2> 
-    <form action="" method="post">
+    <form action=<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?> method="post">
         <fieldset>
             <label for="num1">Enter the first number:</label>
                 <input type="text" name='num1' id='num1'><br>

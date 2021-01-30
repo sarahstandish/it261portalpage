@@ -42,6 +42,8 @@ $week3 = [
 $week4 = [
     'form1.php' => '/it261/weeks/week4/form1.php',
     'form2.php' => '/it261/weeks/week4/form2.php',
+    'login-basic.php' => '/it261/weeks/week4/login-basic.php',
+    'celcius-form.php' => '/it261/weeks/week4/celcius-form.php',
 ];
 
 $nav2 = [

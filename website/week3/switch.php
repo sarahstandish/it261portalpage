@@ -111,7 +111,7 @@ echo "<a href='$day[recipe_url]' target='_blank'>" . $day['recipe_name'] . "</a>
         <li><a href="switch.php?today=Thursday">Thursday</a></li>
         <li><a href="switch.php?today=Friday">Friday</a></li>
         <li><a href="switch.php?today=Saturday">Saturday</a></li>
-    </ul
+    </ul>
 </footer>
 <?php
 include '../../includes/footer.php';
