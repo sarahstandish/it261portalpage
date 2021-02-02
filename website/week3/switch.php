@@ -83,7 +83,7 @@ switch ($today) {
 <body>
 
 <?php
-include '../../includes/nav.php';
+include '../../includes/nav2.php';
 include '../../includes/header.php';
 echo $header;
 ?>

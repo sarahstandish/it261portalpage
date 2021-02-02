@@ -51,7 +51,7 @@ $nav2 = [
     "About" => 'about.php',
     "Gallery" => 'gallery.php',
     "Contact" => 'contact.php',
-    "Daily" => 'daily.php',
+    "Daily" => '/it261/website/week3/switch.php',
 ];
 
 switch(THIS_PAGE) {

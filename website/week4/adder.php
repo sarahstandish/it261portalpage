@@ -59,7 +59,7 @@
     </style>
 </head>
 <body>
-    <?php include '../../includes/nav.php' ?>
+    <?php include '../../includes/nav2.php' ?>
     <?php include '../../includes/header.php'; echo $header ?>
     <h2>Adder.php</h2> 
     <form action=<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?> method="post">
