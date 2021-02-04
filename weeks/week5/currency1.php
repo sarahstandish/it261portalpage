@@ -1,3 +1,13 @@
+<?php
+    function get_rate($currency_symbol) {
+        $currency_url = "https://api.exchangeratesapi.io/latest?base=$currency_symbol";
+
+        $currency_json = file_get_contents($currency_url);
+        $currency_array = json_decode($currency_json, true);
+        $rate = $currency_array['rates']['USD'];
+        return $rate;
+    }    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,11 +60,11 @@
                 <input type="text" name="amount">
             <label>Which currency do you have?</label>
                 <ul>
-                    <li><input type="radio" name="currency" value="0.013">Rubles</li>
-                    <li><input type="radio" name="currency" value="0.78">Canadian Dollars</li>
-                    <li><input type="radio" name="currency" value="1.36">Pounds Sterling</li>
-                    <li><input type="radio" name="currency" value="1.2">Euros</li>
-                    <li><input type="radio" name="currency" value="0.009">Yen</li>
+                    <li><input type="radio" name="currency" value="Rubles">Rubles</li>
+                    <li><input type="radio" name="currency" value="Canadian Dollars">Canadian Dollars</li>
+                    <li><input type="radio" name="currency" value="Pounds Sterling">Pounds Sterling</li>
+                    <li><input type="radio" name="currency" value="Euros">Euros</li>
+                    <li><input type="radio" name="currency" value="Yen">Yen</li>
                 </ul>
             <input type="submit" value="Convert">
             <p><a href="">Reset</a></p>
@@ -62,6 +72,14 @@
     </form>
     <div class="box">
 <?php
+    $symbols = [
+        'Rubles' => 'RUB',
+        'Canadian Dollars' => 'CAD',
+        'Pounds Sterling' => 'GBP',
+        'Euros' => 'EUR',
+        'Yen' => 'YEN'
+    ];
+    
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (empty($_POST['name'])) {
             echo "<p>Please fill in your name.</p>";
@@ -79,9 +97,10 @@
             $name = $_POST['name'];
             $email = $_POST['email'];
             $amount =  $_POST['amount'];
-            $currency = $_POST['currency'];
-            $total = $amount * $currency;
-            echo "<p>Hello, $name. You have $$total USD.</p>";
+            $currency_type = $_POST['currency'];
+            $currency_rate = get_rate($symbols[$currency_type]);
+            $total = number_format($amount * $currency_rate, 2);
+            echo "<p>Hello, $name. The most recent exchange rate available to convert $currency_type to USD is $currency_rate. You have $$total USD.</p>";
         }
     }
 ?>

@@ -1,3 +1,13 @@
+<?php
+    function get_rate($currency_symbol) {
+        $currency_url = "https://api.exchangeratesapi.io/latest?base=$currency_symbol";
+
+        $currency_json = file_get_contents($currency_url);
+        $currency_array = json_decode($currency_json, true);
+        $rate = $currency_array['rates']['USD'];
+        return $rate;
+    }    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,19 +60,19 @@
                 <input type="text" name="amount">
             <label>Which currency do you have?</label>
                 <ul>
-                    <li><input type="radio" name="currency" value="0.013">Rubles</li>
-                    <li><input type="radio" name="currency" value="0.78">Canadian Dollars</li>
-                    <li><input type="radio" name="currency" value="1.36">Pounds Sterling</li>
-                    <li><input type="radio" name="currency" value="1.2">Euros</li>
-                    <li><input type="radio" name="currency" value="0.009">Yen</li>
+                    <li><input type="radio" name="currency" value="Rubles">Rubles</li>
+                    <li><input type="radio" name="currency" value="Canadian Dollars">Canadian Dollars</li>
+                    <li><input type="radio" name="currency" value="Pounds Sterling">Pounds Sterling</li>
+                    <li><input type="radio" name="currency" value="Euros">Euros</li>
+                    <li><input type="radio" name="currency" value="Yen">Yen</li>
                 </ul>
             <label>Banking Institution</label>
                 <select name="bank">
                     <option value="NULL">Select one:</option>
-                    <option value="boa">Bank of America</option>
-                    <option value="chase">Chase</option>
-                    <option value="becu">BECU</option>
-                    <option value="mattress">Mattress</option>
+                    <option value="Bank of America">Bank of America</option>
+                    <option value="Chase">Chase</option>
+                    <option value="BECU">BECU</option>
+                    <option value="your mattress">Mattress</option>
                 </select>
             <input type="submit" value="Convert">
             <p><a href="">Reset</a></p>
@@ -70,6 +80,14 @@
     </form>
     <div class="box">
 <?php
+    $symbols = [
+        'Rubles' => 'RUB',
+        'Canadian Dollars' => 'CAD',
+        'Pounds Sterling' => 'GBP',
+        'Euros' => 'EUR',
+        'Yen' => 'YEN'
+    ];
+
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (empty($_POST['name'])) {
             echo "<p>Please fill in your name.</p>";
@@ -78,7 +96,7 @@
             echo "<p>Please fill in your email.</p>";
         }
         if (empty($_POST['amount'] || !is_numeric($_POST['amount']))) {
-            echo "<p>Please enter an amount.</p>";
+            echo "<p>Please enter an amount. The amount must be a number.</p>";
         } 
         if (empty($_POST['currency'])) {
             echo "<p>Please select a currency.</p>";
@@ -91,16 +109,17 @@
             $_POST['email'], 
             $_POST['amount'], 
             $_POST['currency'],
-            $_POST['bank']) 
-            && is_numeric($_POST['amount'])) {
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $amount =  $_POST['amount'];
-            $currency = $_POST['currency'];
-            $bank = $_POST['currency'];
-            $total = number_format($amount * $currency, 2);
-            echo "<p>Hello, $name. You have $$total USD which will be transferred to $bank.</p>";
-        }
+            $_POST['bank']
+            ) && is_numeric($_POST['amount'])) {
+                $name = $_POST['name'];
+                $email = $_POST['email'];
+                $amount =  $_POST['amount'];
+                $currency_type = $_POST['currency'];
+                $currency_rate = get_rate($symbols[$currency_type]);
+                $bank = $_POST['bank'];
+                $total = number_format($amount * $currency_rate, 2);
+                echo "<p>Hello, $name. The most recent exchange rate available to convert $currency_type to USD is $currency_rate. You have $$total USD which will be transferred to $bank.</p>";
+                }
     }
 ?>
     </div>
