@@ -7,8 +7,10 @@ $assignments = [
     '/it261/website/week2/mamp.php',
     'Using a Switch' => '/it261/website/week3/switch.php',
     'Troubleshooting' => '/it261/website/week4/adder.php',
-    'Group Adder' => '',
-    'Calculating Form' => '/it261/website/week5/calculator.php',
+    'Calculator' => '/it261/website/week5/calculator.php',
+    'Calculator-Days' => '/it261/website/week5/calculator-days.php',
+    'Calculator-Days-Errors' => '/it261/website/week5/calculator-days-errors.php',
+    'Calculator-Days-Errors-Sticky' => '/it261/website/week5/calculator-days-errors-sticky.php',
     'Group Currency Form' => '',
     'Emailable Form' => '',
     'Adminer.org' => '',
@@ -45,6 +47,14 @@ $week4 = [
     'form2.php' => '/it261/weeks/week4/form2.php',
     'login-basic.php' => '/it261/weeks/week4/login-basic.php',
     'celcius-form.php' => '/it261/weeks/week4/celcius-form.php',
+];
+
+$week5 = [
+    'currency1.php' => '/it261/weeks/week5/currency1.php',
+    'currency1a.php' => '/it261/weeks/week5/currency1a.php',
+    'currency2.php' => '/it261/weeks/week5/currency2.php',
+    'currency3.php' => '/it261/weeks/week5/currency3.php',
+    'currency4.php' => '/it261/weeks/week5/currency4.php',
 ];
 
 $nav2 = [

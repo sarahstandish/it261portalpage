@@ -20,9 +20,9 @@ include 'config.php';
                 week_menu($week3);
                 echo "<p class='weekname'>Week 4</p>";
                 week_menu($week4);
-                echo "
-                <p class='weekname'>Week 5</p>
-                <p class='weekname'>Week 6</p>
+                echo "<p class='weekname'>Week 5</p>";
+                week_menu($week5);
+                echo "<p class='weekname'>Week 6</p>
                 <p class='weekname'>Week 7</p>
                 <p class='weekname'>Week 8</p>
 
