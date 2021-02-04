@@ -25,7 +25,6 @@
         margin: 0 auto;
         }
         input {
-            /* display: block; */
             color: var(--background-color)
         }
 
@@ -68,6 +67,11 @@
     </style>
 </head>
 <body>
+    <?php 
+        include '../../includes/nav.php';
+        include '../../includes/header.php';
+        echo $header;
+    ?>
     <h2>Our Calculator</h2>
     <form action=<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?> method="post">
         <fieldset>
@@ -103,18 +107,24 @@
         ];
 
         if (isset($_POST['submit'])) {
-            if (empty($_POST['price']) || empty($_POST['miles']) || $_POST['efficiency'] == 'NULL') {
-                echo "<p>Please fill out all fields before pressing submit</p>";
+            if (empty($_POST['price']) || empty($_POST['miles']) || $_POST['efficiency'] == 'NULL' || !is_numeric($_POST['miles'])) {
+                echo "<p>Please fill out all fields before pressing submit. Miles driven must be a number.</p>";
             } elseif (isset($_POST['miles'], $_POST['price'], $_POST['efficiency'])) {
                 $miles = $_POST['miles'];
                 $price = $_POST['price'];
                 $efficiency_selection = $_POST['efficiency'];
                 $efficiency = $efficiency_grades[$efficiency_selection];
-                $cost = $miles / $efficiency * $price;
-                echo "<p>You're planning to drive $miles miles.<br>Your car has a $efficiency_selection fuel efficiency rating with $efficiency mpg.<br>Your total cost for gas will be $$cost.";
+                $cost = number_format($miles / $efficiency * $price, 2);
+                echo "<p>You're planning to drive $miles miles.</p>
+                <p>Your car has a $efficiency_selection fuel efficiency rating with $efficiency mpg.</p>
+                <p>Your total cost for gas will be $$cost.</p>";
             }
         }
         ?>
     </div>
+    <?php 
+        include '../../includes/footer.php';
+        footer(); 
+    ?>
 </body>
 </html>
