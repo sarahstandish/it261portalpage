@@ -81,19 +81,13 @@
     ];
     
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        if (empty($_POST['name'])) {
-            echo "<p>Please fill in your name.</p>";
-        } 
-        if (empty($_POST['email'])) {
-            echo "<p>Please fill in your email.</p>";
-        }
-        if (empty($_POST['amount'] || !is_numeric($_POST['amount']))) {
-            echo "<p>Please enter an amount.</p>";
-        } 
-        if (empty($_POST['currency'])) {
-            echo "<p>Please select a currency.</p>";
-        }
-        if (isset($_POST['name'], $_POST['email'], $_POST['amount'], $_POST['currency']) && is_numeric($_POST['amount'])) {
+        if (empty($_POST['name']) 
+            || empty($_POST['email']) 
+            || empty($_POST['amount']) 
+            || !is_numeric($_POST['amount']) 
+            || empty($_POST['currency'])) {
+            echo "<p>Please fill in your information.</p>";
+        } else if (isset($_POST['name'], $_POST['email'], $_POST['amount'], $_POST['currency']) && is_numeric($_POST['amount'])) {
             $name = $_POST['name'];
             $email = $_POST['email'];
             $amount =  $_POST['amount'];
