@@ -141,15 +141,15 @@
                 echo "<p class='error'>Please enter how many hours you wish to drive.</p>";
             }
 
-            if (!empty($_POST['hours']) && !is_numeric($_POST['hours'])) {
-                echo "<p class='error'>Hours must be a number.</p>";
+            if (!empty($_POST['hours']) && (!is_numeric($_POST['hours']) || $_POST['hours'] == 0)) {
+                echo "<p class='error'>Hours must be a number and cannot be zero.</p>";
             }
 
             if ($_POST['efficiency'] == 'NULL') {
                 echo "<p class='error'>Please select a fuel efficiency.</p>";
             }
 
-            if (isset($_POST['miles'], $_POST['price'], $_POST['efficiency'], $_POST['name'], $_POST['hours']) && $_POST['efficiency'] != 'NULL') {
+            if (isset($_POST['miles'], $_POST['price'], $_POST['efficiency'], $_POST['name'], $_POST['hours']) && $_POST['efficiency'] != 'NULL' && !empty($_POST['hours']) && !empty($_POST['miles'])) {
                 $miles = $_POST['miles'];
                 $price = $_POST['price'];
                 $efficiency_selection = $_POST['efficiency'];
