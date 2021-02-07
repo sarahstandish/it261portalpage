@@ -55,6 +55,7 @@ $week5 = [
     'currency2.php' => '/it261/weeks/week5/currency2.php',
     'currency3.php' => '/it261/weeks/week5/currency3.php',
     'currency4.php' => '/it261/weeks/week5/currency4.php',
+    'login2.php' => '/it261/weeks/week5/login2.php'
 ];
 
 $nav2 = [
