@@ -16,6 +16,9 @@
     z-index: 1;
     font-size: 1.25em;
     min-width: 200px;
+}
+
+.exercises {
     max-height: 650px;
     overflow: scroll;
 }

@@ -13,7 +13,7 @@ include 'config.php';
         </div>
         <div class='dropdown-container'>
             <div class='nav-button dropdown-button'>Exercises</div>
-            <div class='dropdown'>
+            <div class='exercises dropdown'>
                 <p class='weekname'>Week 2</p>";
                 week_menu($week2);
                 echo "<p class='weekname'>Week 3</p>";
