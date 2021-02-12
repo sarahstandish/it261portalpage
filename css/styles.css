@@ -2,9 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    --background-color: #20063B; 
-    --text-color: #97949E;
-    --accent-color-1: #074F57;
+    --background-color: #EAEFD3;
+     /* Purple: #20063B;  */
+    --text-color: #488B49;
+     /* #97949E; */
+    --accent-color-1: #26547C;
+    /* #074F57; */
     --title-font: 'Syne', sans-serif;
     --body-font: 'Montserrat', sans-serif;
 }
