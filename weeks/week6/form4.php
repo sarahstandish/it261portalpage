@@ -94,11 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // $post_array = $_POST;
 
-    $headers = [
-        'From' => 'no-reply@sarahstandish.com',
-        'Reply-to' => $email,
-    ];
-    
+   
     if (isset($_POST['first_name'],
                 $_POST['last_name'],
                 $_POST['email'],
@@ -108,12 +104,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $_POST['comments'],
                 $_POST['phone'],                
                 $_POST['agree']) && $_POST['region'] != 'NULL' && preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
-        $to = 'standish.sm@gmail.com';
+        $to = 'olga.szemetylo@seattlecolleges.edu';
         date_default_timezone_set('America/Los_Angeles');
         $subject = "Test email " . date('m/d/y h:i:s A');
         $body = "Hello $first_name $last_name,\n Your email is $email.\n Your phone number is $phone.\n Your gender is $gender.\n Your region is $region.\n Your comments are $comments.\n Your favorite wines are " . myWines($_POST['wines']) . ".\n Email sent from sarahstandish.com, Form 4.";
+        $headers = [
+            'From' => 'no-reply@sarahstandish.com',
+            'Reply-to' => 'standish.sm@gmail.com',
+        ];
 
-        mail($to, $subject, $body);
+        mail($to, $subject, $body, $headers);
         header('Location:thanks.php');
 
     }
