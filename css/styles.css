@@ -239,3 +239,57 @@ footer a {
     text-decoration: none;
     color: var(--text-color);
 }
+
+@media only screen and (max-width: 850px) {
+    .main {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    aside {
+        background-color: var(--text-color);
+        color: var(--background-color);
+        font-family: var(--body-font);
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .focus {
+        width: 100%;
+        font-size: 1em;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    
+    .photo {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    img {
+        max-height: 300px;
+        margin: 0 auto;
+        border: 5px solid var(--text-color);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: var(--background-color);
+    }
+
+    .nav-button {
+        text-align: left;
+    }
+
+    .exercises {
+        max-height: 300px;
+    }
+}
