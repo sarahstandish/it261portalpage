@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+fieldset {
+    padding: 10px;
+    border: 3px solid var(--accent-color-1);
+}
+label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: var(--title-font);
+    font-weight: bold;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form ul {
+    margin-left: 20px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-family: var(--body-font)
+}
+
+.box {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.error {
+    display: block;
+    color: var(--accent-color-1);
+    font-family: var(--body-font);
+    font-weight: bold;
+}

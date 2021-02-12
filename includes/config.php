@@ -58,6 +58,17 @@ $week5 = [
     'login2.php' => '/it261/weeks/week5/login2.php'
 ];
 
+$week6 = [
+    'form1.php' => '/it261/weeks/week6/form1.php',
+    'form2.php' => '/it261/weeks/week6/form2.php',
+    'form3.php' => '/it261/weeks/week6/form3.php',
+    'form4.php' => '/it261/weeks/week6/form4.php',
+    'functions.php' => '/it261/weeks/week6/functions.php',
+    'implode.php' => '/it261/weeks/week6/implode.php',
+    'index.php' => '/it261/weeks/week6/index.php',
+    'thanks.php' => '/it261/weeks/week6/thanks.php',
+];
+
 $nav2 = [
     "Home" => '/it261/website/index.php',
     "About" => 'about.php',
