@@ -11,8 +11,7 @@ $assignments = [
     'Calculator-Days' => '/it261/website/week5/calculator-days.php',
     'Calculator-Days-Errors' => '/it261/website/week5/calculator-days-errors.php',
     'Calculator-Days-Errors-Sticky' => '/it261/website/week5/calculator-days-errors-sticky.php',
-    'Group Currency Form' => '',
-    'Emailable Form' => '',
+    'Emailable Form' => '/it261/website/week6/contact.php',
     'Adminer.org' => '',
     'Table of Images' => '',
     'Database' => '',
@@ -73,13 +72,41 @@ $nav2 = [
     "Home" => '/it261/website/index.php',
     "About" => 'about.php',
     "Gallery" => 'gallery.php',
-    "Contact" => 'contact.php',
+    "Contact" => '/it261/website/week6/contact.php',
     "Daily" => '/it261/website/week3/switch.php',
     "People" => 'people.php'
 ];
 
-switch(THIS_PAGE) {
-    case '/it261/index.php':
+$photos = [
+    'image1',
+    'image2',
+    'image3',
+    'image4',
+    'image5',
+    'image6',
+    'image7',
+    'image8',
+    'image9',
+    'image10',
+    'image11'
+];
+
+$gallery = [
+    'Burger King.jpg',
+    'Kentucky Fried Chicken.jpg',
+    "Papa John's.jpg",
+    "Pepsi, Fanta, and CocaCola.jpg",
+    "Pizza Hut.jpg",
+    "Popeyes.jpg"
+];
+
+function getPhoto($photos) {
+    $i = rand(0, 10);
+    $selected_image = "/it261/website/images/{$photos[$i]}.jpg";
+
+    return "<img src='$selected_image' alt='{$photos[$i]}'>";
 }
+
+
 
 ?>
