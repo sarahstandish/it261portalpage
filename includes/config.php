@@ -72,7 +72,7 @@ $nav2 = [
     "Home" => '/it261/website/index.php',
     "About" => 'about.php',
     "Gallery" => '/it261/website/gallery.php',
-    "Contact" => '/it261/website/week6/contact.php',
+    "Contact" => '/it261/website/contact.php',
     "Daily" => '/it261/website/week3/switch.php',
     "People" => 'people.php'
 ];
