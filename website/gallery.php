@@ -1,4 +1,9 @@
-<?php include '../includes/config.php' ?>
+<?php 
+// include '../includes/config.php';
+include '../includes/nav2.php';
+include '../includes/header.php';
+include '../includes/footer.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +23,19 @@
     table {
         font-family: var(--body-font);
         margin: 0 auto;
-        font-size: 1.5em;
+        font-size:
+        1.5em;
+    }
+    h2 {
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
     }
 </style>
 </head>
 <body>
+    <?php echo $header?>
+    <h2>Major Brand Logos in Arabic</h2>
     <table>
         <?php foreach ($gallery as $image) : ?>
         <tr>
@@ -33,5 +46,6 @@
         <?php endforeach ?>
 
     </table>
+    <?php footer() ?>
 </body>
 </html>
