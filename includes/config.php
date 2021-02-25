@@ -11,9 +11,9 @@ $assignments = [
     'Calculator-Days' => '/it261/website/week5/calculator-days.php',
     'Calculator-Days-Errors' => '/it261/website/week5/calculator-days-errors.php',
     'Calculator-Days-Errors-Sticky' => '/it261/website/week5/calculator-days-errors-sticky.php',
-    'Emailable Form' => '/it261/website/week6/contact.php',
+    'Emailable Form' => '/it261/website/contact.php',
     'Adminer.org' => '',
-    'Table of Images' => '',
+    'Table of Images' => '/it261/website/gallery.php',
     'Database' => '',
     'Login and Register' => '',
     "Added points/lost points" => ''
@@ -68,6 +68,11 @@ $week6 = [
     'thanks.php' => '/it261/weeks/week6/thanks.php',
 ];
 
+$week7 = [
+    'random.php' => '/it261/weeks/week7/random.php',
+    'substring.php' => '/it261/weeks/week7/substring.php',
+];
+
 $nav2 = [
     "Home" => '/it261/website/index.php',
     "About" => 'about.php',
@@ -92,12 +97,12 @@ $photos = [
 ];
 
 $gallery = [
-    'Burger King.jpg',
-    'Kentucky Fried Chicken.jpg',
-    "Papa John's.jpg",
-    "Pepsi, Fanta, and CocaCola.jpg",
-    "Pizza Hut.jpg",
-    "Popeyes.jpg"
+    'Burger_King.jpg' => "برجر كنج",
+    'Kentucky_Fried_Chicken.jpg' => "دجاج كنتاكي",
+    "Papa_John's.jpg" => "بابا جونز",
+    "Pepsi,_Fanta,_and_CocaCola.jpg" => "بيبسي، فانتا، وكوكاكولا",
+    "Pizza_Hut.jpg" => "بيتزا هت",
+    "Popeyes.jpg" => "بوبايز"
 ];
 
 function getPhoto($photos) {

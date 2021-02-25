@@ -24,8 +24,9 @@ include 'config.php';
                 week_menu($week5);
                 echo "<p class='weekname'>Week 6</p>";
                 week_menu($week6);
-                echo "<p class='weekname'>Week 7</p>
-                <p class='weekname'>Week 8</p>
+                echo "<p class='weekname'>Week 7</p>";
+                week_menu($week7);
+                echo "<p class='weekname'>Week 8</p>
 
             </div>
         </div>
