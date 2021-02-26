@@ -1,5 +1,4 @@
 <?php
-function footer() { 
     $page = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
     echo "<footer>
         <ul>
@@ -14,5 +13,4 @@ function footer() {
             </li>
         </ul>
     </footer>";
-    };
 ?>

@@ -31,3 +31,22 @@ if (mysqli_num_rows($result) > 0) {
 
 <h2>We have made it</h2>
 <h3>You are on <?php echo $first_name ?>'s page</h3>
+<?php 
+
+if (empty($feedback)) {
+    echo "<ul>";
+    echo "Result is $result<br>";
+    echo "Row is " . mysqli_fetch_assoc($result);
+    echo "<br>$first_name";
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo $row;
+        echo "after row";
+        echo $first_name;
+        echo $result;
+    }
+    echo "</ul>";
+} else {
+    echo $feedback;
+}
+
+?>

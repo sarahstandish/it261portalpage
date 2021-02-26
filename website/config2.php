@@ -1,11 +1,5 @@
 <?php
 
-//include 'keys.php';
-
-function all_set() {
-    
-}
-
 function get_lat_and_lng($google_api_key, $location) {
 
     $location = urlencode($_POST['location']);
