@@ -12,5 +12,6 @@
                 <a href='https://jigsaw.w3.org/css-validator/validator?uri=$page'>CSS VALID</a>
             </li>
         </ul>
-    </footer>";
+    </footer>
+    </html>";
 ?>
