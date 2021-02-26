@@ -115,5 +115,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo display_header('Contact');
     include 'includes/form.php';
     include 'includes/footer.php'
-    ?>
-</html>
+?>

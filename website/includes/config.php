@@ -29,19 +29,15 @@ function get_photo_array($flickr_api_key, $search_term, $latitude, $longitude, $
 
 function display_photos($photo_array, $flickr_api_key) {
 
-
     $top_10_photos = [];
 
-    if (empty($photo_array)) {
-        
-    } else {
+    if (!empty($photo_array)) {
         foreach($photo_array as $photo) {
             $server_id = $photo['server'];
             $photo_id = $photo['id'];
             $photo_secret = $photo['secret'];
             $photo_owner = $photo['owner'];
-            
-            
+                        
                 if (checkDPI($_POST['dpi'], $photo_id, $photo_secret, $flickr_api_key)) {
                     $top_10_photos["https://www.flickr.com/photos/$photo_owner/$photo_id"] = "https://live.staticflickr.com/$server_id/" . $photo_id . "_" . "$photo_secret" . "_n.jpg";
                 }
@@ -52,8 +48,6 @@ function display_photos($photo_array, $flickr_api_key) {
     }
 
     return $top_10_photos;
-
-
 }
 
 function checkDPI($dpi, $photo_id, $photo_secret, $flickr_api_key) {
@@ -70,11 +64,8 @@ function checkDPI($dpi, $photo_id, $photo_secret, $flickr_api_key) {
         foreach ($one_photo_array['photo']['exif'] as $item) {
         
             if (in_array('X-Resolution', $item, true)) {
-                if ($item['raw']['_content'] >= $dpi) {
-                    return true;
-                } else {
-                    return false;
-                }
+                // return true if photo dpi is greater than or equal to desired dpi
+                return ($item['raw']['_content'] >= $dpi);
             }
         }
     } else {
