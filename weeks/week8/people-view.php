@@ -10,7 +10,9 @@ if (isset($_GET['id'])) {
 
 $sql = "SELECT * FROM week_8_people WHERE week_8_people_id = $id";
 
-$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+// $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+
+$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
 $result = mysqli_query($iConn, $sql) or die(myError(__FILE__, __LINE__, mysqli_error($iConn)));
 
@@ -27,26 +29,35 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     $feedback = "Nobody is home.";
 }
+include '../../website/includes/header.php';
+display_header("People View");
 ?>
 
-<h2>We have made it</h2>
-<h3>You are on <?php echo $first_name ?>'s page</h3>
-<?php 
+<body>
+    <h2>We have made it</h2>
+    <h2>You are on <?php echo $first_name ?>'s page</h2>
+    <!-- <p>Name: <?php echo $first_name . " " . $last_name; ?></p>
+    <p>Occupation: <?php echo $occupation ?></p>
+    <p>Email: <?php echo $email ?></p>
+    <p>Birthdate: <?php echo $birthdate ?></p> -->
 
+<?php 
 if (empty($feedback)) {
     echo "<ul>";
-    echo "Result is $result<br>";
-    echo "Row is " . mysqli_fetch_assoc($result);
-    echo "<br>$first_name";
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo $row;
-        echo "after row";
-        echo $first_name;
-        echo $result;
-    }
+        echo "<li><b>First name:</b> $first_name</li>";
+        echo "<li><b>Last name:</b> $last_name</li>";
+        echo "<li><b>Occupation:</b> $occupation</li>";
+        echo "<li><b>Email:</b> $email</li>";
+        echo "<li><b>Birthdate:</b> $birthdate</li>";
     echo "</ul>";
+    echo "<p>Description: $description</p>";
+    echo "<p><a href='people.php' style='color:var(--accent-color-1)'>Return to our People page</a></p>";
 } else {
     echo $feedback;
 }
+mysqli_free_result($result);
+mysqli_close($iConn);
+echo "</body>";
+include '../../website/includes/footer.php'
 
 ?>

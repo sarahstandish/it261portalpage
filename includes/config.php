@@ -73,6 +73,11 @@ $week7 = [
     'substring.php' => '/it261/weeks/week7/substring.php',
 ];
 
+$week8 = [
+    'people.php' => '/it261/weeks/week8/people.php',
+    'people-view.php' => '/it261/weeks/week8/people-view.php'
+];
+
 $nav2 = [
     "Home" => '/it261/website/index.php',
     "About" => 'about.php',
