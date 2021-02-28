@@ -10,8 +10,6 @@ if (isset($_GET['id'])) {
 
 $sql = "SELECT * FROM week_8_people WHERE week_8_people_id = $id";
 
-// $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
-
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
 $result = mysqli_query($iConn, $sql) or die(myError(__FILE__, __LINE__, mysqli_error($iConn)));
@@ -34,6 +32,8 @@ display_header("People View");
 ?>
 
 <body>
+<div id="wrapper">
+<main>
     <h2>We have made it</h2>
     <h2>You are on <?php echo $first_name ?>'s page</h2>
     <!-- <p>Name: <?php echo $first_name . " " . $last_name; ?></p>
@@ -55,9 +55,20 @@ if (empty($feedback)) {
 } else {
     echo $feedback;
 }
-mysqli_free_result($result);
-mysqli_close($iConn);
-echo "</body>";
-include '../../website/includes/footer.php'
 
+?>
+</main>
+    <aside>
+        <?php
+        if (empty($feedback)) {
+            echo "<img src='/it261/weeks/week7/images/people$id.jpg' alt='Photo of $first_name $last_name'>";
+        }
+        ?>
+    </aside>
+</div>
+</body>
+<?php 
+    mysqli_free_result($result);
+    mysqli_close($iConn);
+    include '../../website/includes/footer.php'; 
 ?>
