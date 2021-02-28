@@ -4,3 +4,4 @@
 website/keys.php
 website/includes/keys.php
 *.jpg
+**/*.jpg
