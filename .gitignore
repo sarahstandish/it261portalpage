@@ -5,3 +5,4 @@ website/keys.php
 website/includes/keys.php
 *.jpg
 **/*.jpg
+weeks/week8/credentials.php
