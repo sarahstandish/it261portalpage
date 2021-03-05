@@ -12,9 +12,8 @@ $assignments = [
     'Calculator-Days-Errors' => '/it261/website/week5/calculator-days-errors.php',
     'Calculator-Days-Errors-Sticky' => '/it261/website/week5/calculator-days-errors-sticky.php',
     'Emailable Form' => '/it261/website/contact.php',
-    'Adminer.org' => '',
     'Table of Images' => '/it261/website/gallery.php',
-    'Database' => '',
+    'Database' => '/it261/website/destinations.php',
     'Login and Register' => '',
     "Added points/lost points" => ''
 ];
@@ -84,7 +83,7 @@ $nav2 = [
     "Gallery" => '/it261/website/gallery.php',
     "Contact" => '/it261/website/contact.php',
     "Daily" => '/it261/website/week3/switch.php',
-    "People" => 'people.php'
+    "Destinations" => '/it261/website/destinations.php'
 ];
 
 $photos = [

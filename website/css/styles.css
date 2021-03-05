@@ -76,7 +76,7 @@ aside li {
     font-size: 1.2em;
 }
 
-img {
+.main img {
     max-width: 32%;
     height: auto;
     margin: 0 auto;
@@ -127,7 +127,7 @@ button {
 }
 
 
-img:hover {
+.photos img:hover {
     border: 3px solid var(--accent-color-1);
 }
 
@@ -166,4 +166,69 @@ form ul {
     color: red;
 }
 
+.destinations_list {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination {
+    padding: 5px;
+}
+
+.destination a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: 1.2em;
+}
+
+.destination a:hover {
+    color: var(--accent-color-1);
+    font-weight: bold;
+}
+
+.destination-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.destination-wrapper p {
+    padding: 5px;
+    font-style: normal;
+}
+
+.destination-wrapper a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.destination-wrapper a:hover {
+    color: var(--accent-color-1);
+}
+
+.destination-wrapper img {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding-bottom: 10px;
+    max-height: 500px;
+    width: auto;
+}
+
+#google_map {
+    width: 700px; 
+    height: 400px; 
+    margin: 0 auto; 
+    border: 3px solid var(--text-color);
+    margin-top: 10px;
+}
+
+#google_map img {
+    border: none;
+}
+
+#adminer {
+    margin: 0 auto;
+    display: block;
+}
 

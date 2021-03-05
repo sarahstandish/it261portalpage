@@ -13,10 +13,16 @@ function display_header($title) {
     </head>
     <body>
     <nav>";
-
-        include '../includes/config.php';
+    $nav2 = [
+        "Home" => '/it261/website/index.php',
+        "About" => 'about.php',
+        "Gallery" => '/it261/website/gallery.php',
+        "Contact" => '/it261/website/contact.php',
+        "Daily" => '/it261/website/week3/switch.php',
+        "Destinations" => '/it261/website/destinations.php'
+    ];
         foreach($nav2 as $name => $url) {
-            if (THIS_PAGE == $url) {
+            if ('THIS_PAGE' == $url) {
                 echo "<div class='dropdown-container nav-button'><a class='home-active' href='$url'>$name</a></div>";
             } else {
                 echo "<div class='dropdown-container nav-button'><a href='$url'>$name</a></div>";

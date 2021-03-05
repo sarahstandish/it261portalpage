@@ -15,4 +15,5 @@ function myError($myFile, $myLine, $errorMsg)
         die();
     }   
 }
-    ?>
+
+?>

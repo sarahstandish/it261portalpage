@@ -1,5 +1,13 @@
 <?php
-
+    $nav2 = [
+        "Home" => '/it261/website/index.php',
+        "About" => 'about.php',
+        "Gallery" => '/it261/website/gallery.php',
+        "Contact" => '/it261/website/contact.php',
+        "Daily" => '/it261/website/week3/switch.php',
+        "Destinations" => '/it261/website/destinations.php'
+    ];
+    
 function get_lat_and_lng($google_api_key, $location) {
 
     $location = urlencode($_POST['location']);
@@ -98,5 +106,20 @@ function defaultUnchecked($n) {
     }
 }
 
+// ob_start();
+define('DEBUG', 'TRUE');
+include 'credentials.php';
+
+function myError($myFile, $myLine, $errorMsg) {
+
+    if (defined('DEBUG') && DEBUG) {
+        echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+        echo 'Error message: <b> '.$errorMsg.'</b>';
+        die();
+    }  else {
+        echo ' Houston, we have a problem!';
+        die();
+    }
+}
 
 ?>
