@@ -1,6 +1,6 @@
 <?php
 include 'includes/header.php';
-display_header("Destinations");
+display_header("About");
 ?>
 <h2>About</h2>
 <img id='adminer' src='/it261/website/images/adminer.jpg'>
