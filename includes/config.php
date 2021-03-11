@@ -77,6 +77,15 @@ $week8 = [
     'people-view.php' => '/it261/weeks/week8/people-view.php'
 ];
 
+$week9 = [
+    'errors.php' => '/it261/weeks/week9/includes/errors.php',
+    'header.php' => '/it261/weeks/week9/includes/header.php',
+    'index.php' => '/it261/weeks/week9/index.php',
+    'login.php' => '/it261/weeks/week9/login.php',
+    'register.php' => '/it261/weeks/week9/register.php',
+    'server.php' => '/it261/weeks/week9/server.php',
+];
+
 $nav2 = [
     "Home" => '/it261/website/index.php',
     "About" => 'about.php',

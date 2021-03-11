@@ -45,20 +45,20 @@ if (empty($feedback)) {
 }
 ?>
 <div id='google_map'></div>
-    <script>
-        function myMap() {
-            var mapProp = {
-                center:new google.maps.LatLng(<?php echo $latitude ?>, <?php echo $longitude ?>),
-                zoom: 5,
-            };
-            var map = new google.maps.Map(document.getElementById('google_map'), mapProp);
-            var marker = new google.maps.Marker({
-                position:new google.maps.LatLng(<?php echo $latitude ?>, <?php echo $longitude ?>),
-            });
-            marker.setMap(map);
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $google_api_key ?>&callback=myMap"></script>
+<script>
+function myMap() {
+    var mapProp = {
+        center:new google.maps.LatLng(<?php echo $latitude ?>, <?php echo $longitude ?>),
+        zoom: 5,
+    };
+    var map = new google.maps.Map(document.getElementById('google_map'), mapProp);
+    var marker = new google.maps.Marker({
+        position:new google.maps.LatLng(<?php echo $latitude ?>, <?php echo $longitude ?>),
+    });
+    marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $google_api_key ?>&callback=myMap"></script>
 
 <?php
 

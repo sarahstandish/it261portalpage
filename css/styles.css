@@ -240,7 +240,7 @@ footer a {
     color: var(--text-color);
 }
 
-@media only screen and (max-width: 850px) {
+@media (max-width: 850px) {
     .main {
         margin: 0 auto;
         display: flex;

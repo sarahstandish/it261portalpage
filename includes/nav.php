@@ -28,7 +28,8 @@ include 'config.php';
                 week_menu($week7);
                 echo "<p class='weekname'>Week 8</p>";
                 week_menu($week8);
-
+                echo "<p class='weekname'>Week 9</p>";
+                week_menu($week9);
             echo "</div>
         </div>
         <div class='dropdown-container'>
