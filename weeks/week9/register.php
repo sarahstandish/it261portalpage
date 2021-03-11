@@ -1,7 +1,7 @@
 <?php
 
 include 'server.php';
-//include 'includes/header.php';
+include 'includes/header.php';
 
 ?>
 <h2>Register today</h2>
@@ -29,5 +29,8 @@ include 'server.php';
 
     </fieldset>
 </form>
-
+</div> 
+<!-- end wrapper -->
 <p class="center"><a href="login.php">Already a member? Please log in</a></p>
+
+<?php include 'includes/footer.php' ?>
