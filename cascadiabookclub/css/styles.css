@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --background-color: #F1F2F6;;
+    --text-color: #085D05;
+    --accent-color-1: #0A0F70;
+    --title-font: 'Syne', sans-serif;
+    --body-font: 'Montserrat', sans-serif;
+    font-family: var(--body-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropdown {
+    font-family: var(--body-font);
+    display: none;
+    position: absolute;
+    z-index: 1;
+    font-size: 1.25em;
+    min-width: 200px;
+}
+
+.exercises {
+    max-height: 650px;
+    overflow: scroll;
+}
+
+.dropdown a {
+    padding: 3px;
+}
+
+.dropdown p {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.dropdown a:hover {
+    background-color: var(--text-color);
+    color: var(--accent-color-1)
+}
+
+.nav-button:hover {
+    color: var(--accent-color-1);
+}
+
+.nav-button a:hover {
+    color: var(--accent-color-1);
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+    background-color: var(--accent-color-1);
+    color: var(--text-color);
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav-button {
+    display: inline;
+    font-size: 2em;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: var(--title-font);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--background-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: inline-block;
+    width: 100%;
+    font-family: var(--title-font);
+}
+
+.weekname {
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 1.1em;
+    border-bottom: 3px solid var(--text-color);
+    border-top: 3px solid var(--text-color);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow: scroll;
+}
+
+.active {
+    background-color: var(--background-color);
+}
+
+.home-active {
+    color: var(--accent-color-1);
+}
+
+h1 {
+    font-family: var(--title-font);
+    color: var(--background-color);
+}
+
+h2 {
+    font-family: var(--title-font);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.4em;
+    padding: 5px;
+    max-width: 1000px;
+}
+
+p {
+    font-family: var(--body-font)
+}
+
+.about {
+    text-align: justify;
+}
+
+.about a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.about a:hover {
+    text-decoration: none;
+    color: var(--accent-color-1);
+}
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+header {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-family: var(--title-font);
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.front-page {
+    float: right;
+    width: 70%;
+    padding-left: 20px;
+}
+
+.front-page p {
+    font-size: 1.1em;
+    padding-top: 10px;
+}
+
+aside {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-family: var(--body-font);
+    display: block;
+    width: 30%;
+    padding: 10px;
+    float: left;
+}
+
+aside a {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+aside a:hover {
+    color: var(--accent-color-1);
+}
+
+aside .book-cover img {
+    margin: 20px auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.photo {
+    max-width: 30%;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin: 5px auto;
+}
+
+footer {
+    font-family: var(--title-font);
+    display: block;
+    border-top: 5px solid var(--text-color);
+    border-bottom: 5px solid var(--text-color);
+    margin-top: 10px;
+    font-weight: bold;
+    /* position: fixed;
+    bottom: 0; */
+    width: 100%;
+}
+
+footer ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer a:hover {
+    color: var(--accent-color-1);
+}
+
+footer li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#flag {
+    max-height: 150px;
+    width: auto;
+    display: block;
+}
+
+.book-cover-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-cover img {
+    height: 300px;
+    width: auto;
+    margin: 10px;
+}
+
+.book-cover img:hover {
+    opacity: .5;
+}
+
+.book-info {
+    font-size: 1.5em;
+    margin: 5px;
+    display: block;
+    max-width: 70%;
+}
+
+.book-info p {
+    padding: 5px 0px;
+}
+
+.book-info a {
+    color: var(--text-color);
+}
+
+.book-info a:hover {
+    color: var(--accent-color-1);
+}
+
+.book-view-cover img {
+    float: left;
+    height: 300px;
+    width: auto;
+}
+
+.info-type {
+    font-weight: bold;
+    color: var(--accent-color-1);
+}
+
+@media (max-width: 850px) {
+    .main {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    aside {
+        background-color: var(--text-color);
+        color: var(--background-color);
+        font-family: var(--body-font);
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .focus {
+        width: 100%;
+        font-size: 1em;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    
+    .photo {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    img {
+        max-height: 300px;
+        margin: 0 auto;
+        /* border: 5px solid var(--text-color); */
+        padding: 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: var(--background-color);
+    }
+
+    .nav-button {
+        text-align: left;
+    }
+
+    .exercises {
+        max-height: 300px;
+    }
+
+}

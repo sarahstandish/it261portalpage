@@ -5,6 +5,10 @@ website/keys.php
 website/includes/keys.php
 *.jpg
 **/*.jpg
+*.png
+**/*.png
+**/credentials.php
 weeks/week8/credentials.php
 weeks/week9/credentials.php
 website/includes/credentials.php
+**/keys.php

@@ -14,8 +14,8 @@ $assignments = [
     'Emailable Form' => '/it261/website/contact.php',
     'Table of Images' => '/it261/website/gallery.php',
     'Database' => '/it261/website/destinations.php',
-    'Login and Register' => '',
-    "Added points/lost points" => ''
+    'Login and Register' => '/it261/weeks/week9/register.php',
+    'Final Project' => '/it261/cascadiabookclub/index.php'
 ];
 
 function week_menu($array) {
