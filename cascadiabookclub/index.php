@@ -23,7 +23,7 @@ list($title, $author, $year_published, $setting, $about, $category, $url) = get_
         <h2>Start Reading</h2>
         <div class='book-cover'>
             <a href="/it261/cascadiabookclub/book-view.php?id=<?php echo $id ?>">
-                <img src="/it261/cascadiabookclub/images/book<?php echo $id ?>.jpg" alt="<?php echo $title ?>">
+                <?php echo display_image($id, $title); ?>
             </a>
         </div>
     </aside>

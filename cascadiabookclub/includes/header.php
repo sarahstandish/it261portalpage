@@ -1,6 +1,14 @@
 <?php
 include 'config.php';
 function display_header($title) {
+    $nav2 = [
+        "Home" => '/it261/cascadiabookclub/index.php',
+        "About" => '/it261/cascadiabookclub/about.php',
+        "Gallery" => '/it261/cascadiabookclub/gallery.php',
+        "Contact" => '/it261/cascadiabookclub/contact.php',
+        "Daily" => '/it261/cascadiabookclub/daily.php',
+        "Books" => '/it261/cascadiabookclub/books.php'
+    ];
     echo
     "<!DOCTYPE html>
     <html lang='en'>
@@ -12,14 +20,6 @@ function display_header($title) {
     </head>
     <body>
         <nav>";
-        $nav2 = [
-            "Home" => '/it261/cascadiabookclub/index.php',
-            "About" => '/it261/cascadiabookcub/about.php',
-            "Gallery" => '/it261/cascadiabookclub/gallery.php',
-            "Contact" => '/it261/cascadiabookclub/contact.php',
-            "Daily" => '/it261/cascadiabookclub/daily.php',
-            "Books" => '/it261/cascadiabookclub/books.php'
-    ];
             foreach($nav2 as $name => $url) {
                 if ('THIS_PAGE' == $url) {
                     echo "<div class='dropdown-container nav-button'><a class='home-active' href='$url'>$name</a></div>";

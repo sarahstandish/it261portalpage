@@ -305,6 +305,82 @@ footer a {
     color: var(--accent-color-1);
 }
 
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+fieldset {
+    padding: 10px;
+    border: 3px solid var(--accent-color-1);
+}
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--accent-color-1);
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+button {
+    display: block;
+    padding: 5px;
+    margin-top: 5px;
+    color: var(--background-color);
+    background-color: var(--accent-color-1);
+}
+
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form ul {
+    margin-left: 20px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-family: var(--body-font)
+}
+
+.box {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.error {
+    display: block;
+    color: var(--accent-color-1);
+    font-family: var(--body-font);
+    font-weight: bold;
+}
+
+.reset a {
+    color: var(--text-color);
+    display: block;
+    padding-top: 5px;
+}
+
+.error {
+    color: red;
+}
+
+.about p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
 @media (max-width: 850px) {
     .main {
         margin: 0 auto;

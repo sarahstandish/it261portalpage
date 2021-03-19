@@ -17,7 +17,7 @@ $result = get_sql_result($db, 'books', 'category', 'Books');
                         ?>
                     <div class='book-cover'>
                         <a href="/it261/cascadiabookclub/book-view.php?id=<?php echo $row['book_id'] ?>">
-                            <img src="/it261/cascadiabookclub/images/book<?php echo $row['book_id'] ?>.jpg" alt="<?php echo $row['title'] ?>">
+                            <?php echo display_image($row['book_id'], $row['title']); ?>
                         </a>                 
                     </div>
                     <?php

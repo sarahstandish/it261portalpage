@@ -21,7 +21,7 @@ if (isset($_GET['id']) && $_GET['id'] <= get_table_length('books', $db)) {
         <p><span class="info-type"><a href='<?php echo $url; ?>'>Read reviews on Goodreads</a></span></p>
     </div>
     <div class='book-view-cover'>
-        <img src="/it261/cascadiabookclub/images/book<?php echo $id ?>.jpg" alt="<?php echo $title ?>">
+        <?php echo display_image($id, $title); ?>
     </div>
 
 </div>
