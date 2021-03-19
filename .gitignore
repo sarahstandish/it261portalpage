@@ -12,3 +12,6 @@ weeks/week8/credentials.php
 weeks/week9/credentials.php
 website/includes/credentials.php
 **/keys.php
+composer.json
+composer.lock
+vendor/
