@@ -101,7 +101,7 @@ $frequency_err = "";
 
 $top_10_photos = "";
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit_conact_form'])) {
 
     // $post_array = $_POST;
     if (empty($_POST['first_name'])) {
@@ -188,53 +188,72 @@ function display_image($id, $title) {
 $days = [
     'sunday' => [
         'day_name' => 'Sunday',
-        'background_color' => '#7FB069',
-        'text_color' => '#FFCA3A',
-        'accent_color' => '#FBFBFF',
         'id' => 1,
     ],
     'monday' => [
         'day_name' => 'Monday',
-        'background_color' => '#EAEFD3',
-        'accent_color' => '#DCC48E',
-        'text_color' => '#488B49',
         'id' => 2,
     ],
     'tuesday' => [
         'day_name' => 'Tuesday',
-        'background_color' => '#FBFFFE',
-        'text_color' => '#95190C',
-        'accent_color' => '#E6AF2E',
         'id' => 3,
     ],
     'wednesday' => [
         'day_name' => 'Wednesday',
-        'background_color' => '#2A9134',
-        'text_color' => '#E6EBE0',
-        'accent_color' => '#BA1F33',
         'id' => 4,
     ],
     'thursday' => [
         'day_name' => 'Thursday',
-        'background_color' => '#F1E3F3',
-        'text_color' => '#F18F01',
-        'accent_color' => '#618B4A',
         'id' => 5,
     ],
     'friday' => [
         'day_name' => 'Friday',
-        'background_color' => '#E7E5DF',
-        'text_color' => '#AF3800',
-        'accent_color' => '#60992D',
         'id' => 6,
     ],
     'saturday' => [
         'day_name' => 'Saturday',
-        'background_color' => '#BBBBBF',
-        'text_color' => '#566E3D',
-        'accent_color' => '#46B1C9',
         'id' => 7,
     ],
 ];
+
+//gallery
+$maps = [
+    'cascadia_as_states.png' => "Some define Cascadia primarily through political boundaries, edged by the borders of Oregon, Washington, and British Columbia.",
+    'cascadia_as_the_northwest_of_north_america.png' => "Some believe that Cascadia covers the entire Pacfic Northwest of the North American contintent.",
+    'mcLoskey_map_of_2015.png' => "One of the most detailed and most beautiful maps of Cascadia, the <a href='http://www.marshamccloskey.com/cascadiamap.html'>McLoskey Map of Cascadia</a> imagines Cascadia as a bioregion defined by natural plateaus and watersheds that create the distinct ecosystems of the Northwest.",
+    'western_temperate_rainforests.jpg' => "Others take a narrower view, believing that Cascadia should be defined only by the temperate rainforests that cover the land from the ocean to the Cascade mountains."
+    ];
+
+//login redirection
+
+function check_login() {
+    // session_start();
+
+    if (!isset($_SESSION['UserName'])) {
+        $_SESSION['msg'] = "You must log in first.";
+        header('Location:/it261/cascadiabookclub/login.php');
+    }
+    
+    if (isset($_GET['logout'])) {
+        session_destroy();
+        unset($_SESSION['UserName']);
+        header('Location:/it261/cascadiabookclub/login.php');
+    }
+    if (isset($_SESSION['Success'])) :?>
+        <div class='success'>
+        <h3><?php echo $_SESSION['Success'];
+            unset($_SESSION['Success']); ?></h3>
+        </div>
+        <?php endif;
+    
+    if (isset($_SESSION['UserName'])) :?>
+        <div class="welcome-logout">
+            <h3><?php echo "Hello, {$_SESSION['UserName']}"; ?>    
+            </h3>
+            <a href="/it261/cascadiabookclub/index.php?logout='1'">Logout</a>
+        </div>
+        <?php endif;
+}
+
 
 ?>

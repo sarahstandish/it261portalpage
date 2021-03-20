@@ -46,7 +46,7 @@
                 <li><input type="radio" name="agree" value="agree" <?php if (isset($_POST['agree'])) echo "checked='checked'" ?>>Agree</li>
             </ul>
             <span class="error"><?php echo $agree_err?></span>
-        <button type="submit">Submit</button>
+        <button type="submit" name="submit_contact_form">Submit</button>
         <p class="reset"><a href="">Reset</a></p>
         </fieldset>
     </form>

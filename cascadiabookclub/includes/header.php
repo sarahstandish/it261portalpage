@@ -1,5 +1,4 @@
 <?php
-include 'config.php';
 function display_header($title) {
     $nav2 = [
         "Home" => '/it261/cascadiabookclub/index.php',

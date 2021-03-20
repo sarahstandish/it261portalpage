@@ -1,7 +1,5 @@
 <?php
-session_start();
-
-include 'config.php';
+include 'includes/server.php';
 include 'includes/header.php';
 
 if (!isset($_SESSION['UserName'])) {

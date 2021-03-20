@@ -1,4 +1,5 @@
 <?php
+include 'includes/server.php';
 include 'includes/header.php';
 display_header('Cascadia Book Club');
 

@@ -1,5 +1,6 @@
 <?php
 
+include 'includes/server.php';
 include 'includes/header.php';
 display_header('Books');
 

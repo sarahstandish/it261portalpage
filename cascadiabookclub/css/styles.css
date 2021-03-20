@@ -12,36 +12,7 @@
 
 a {
     text-decoration: none;
-}
-
-.dropdown {
-    font-family: var(--body-font);
-    display: none;
-    position: absolute;
-    z-index: 1;
-    font-size: 1.25em;
-    min-width: 200px;
-}
-
-.exercises {
-    max-height: 650px;
-    overflow: scroll;
-}
-
-.dropdown a {
-    padding: 3px;
-}
-
-.dropdown p {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
-
-.dropdown a:hover {
-    background-color: var(--text-color);
-    color: var(--accent-color-1)
+    color: inherit;
 }
 
 .nav-button:hover {
@@ -50,12 +21,6 @@ a {
 
 .nav-button a:hover {
     color: var(--accent-color-1);
-}
-
-.dropdown-container:hover .dropdown {
-    display: block;
-    background-color: var(--accent-color-1);
-    color: var(--text-color);
 }
 
 .dropdown-container {
@@ -94,14 +59,6 @@ nav a {
     display: inline-block;
     width: 100%;
     font-family: var(--title-font);
-}
-
-.weekname {
-    font-family: var(--title-font);
-    font-weight: bold;
-    font-size: 1.1em;
-    border-bottom: 3px solid var(--text-color);
-    border-top: 3px solid var(--text-color);
 }
 
 body {
@@ -150,6 +107,11 @@ p {
     color: var(--accent-color-1);
 }
 
+.about p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .main {
     max-width: 1000px;
     margin: 0 auto;
@@ -157,7 +119,7 @@ p {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
 }
 
 header {
@@ -269,6 +231,7 @@ footer a {
     height: 300px;
     width: auto;
     margin: 10px;
+    border: 2px solid var(--background-color);
 }
 
 .book-cover img:hover {
@@ -323,7 +286,7 @@ label {
     color: var(--accent-color-1);
 }
 
-input[type=text], input[type=email], input[type=number] {
+input[type=text], input[type=email], input[type=number], input[type=password], input[type=tel] {
     width: 50%;
     margin-bottom: 10px;
     padding: 3px;
@@ -338,7 +301,6 @@ button {
     color: var(--background-color);
     background-color: var(--accent-color-1);
 }
-
 
 textarea {
     width: 100%;
@@ -375,11 +337,64 @@ form ul {
     color: red;
 }
 
-.about p {
-    padding-top: 5px;
-    padding-bottom: 5px;
+.daily {
+    border: 2px solid var(--text-color);
+    border-radius: 3px;
 }
 
+.Sunday {
+    color: #6D2E46;
+}
+
+.Monday {
+    color: #002400;
+}
+
+.Tuesday {
+    color: #1982C4;
+}
+
+.Wednesday {
+    color: #E0A500;
+}
+
+.Thursday {
+    color: #23395B;
+}
+
+.Friday {
+    color: #6969B3;
+}
+
+.Saturday {
+    color: #5F7481;
+}
+
+.map {
+    width: 50%;
+}
+
+.map img {
+    max-height: 400px;
+    width: auto;
+    display: block;
+    float: right;
+}
+
+.map-name {
+    font-family: var(--title-font);
+    margin-top: 100px;
+    font-size: 1.5em;
+}
+
+.map-description {
+    max-width: 50%;
+    padding-left: 20px;
+}
+
+.centered {
+    margin: 0 auto;
+}
 
 @media (max-width: 850px) {
     .main {
@@ -429,10 +444,6 @@ form ul {
 
     .nav-button {
         text-align: left;
-    }
-
-    .exercises {
-        max-height: 300px;
     }
 
 }

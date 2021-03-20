@@ -1,5 +1,6 @@
 <?php
 
+include 'includes/server.php';
 include 'includes/header.php';
 if (isset($_GET['id']) && $_GET['id'] <= get_table_length('books', $db)) {
     $id = $_GET['id'];
