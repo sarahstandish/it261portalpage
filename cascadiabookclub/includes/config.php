@@ -227,7 +227,6 @@ $maps = [
 //login redirection
 
 function check_login() {
-    // session_start();
 
     if (!isset($_SESSION['UserName'])) {
         $_SESSION['msg'] = "You must log in first.";
@@ -250,7 +249,7 @@ function check_login() {
         <div class="welcome-logout">
             <h3><?php echo "Hello, {$_SESSION['UserName']}"; ?>    
             </h3>
-            <a href="/it261/cascadiabookclub/index.php?logout='1'">Logout</a>
+            <button><a href="/it261/cascadiabookclub/index.php?logout='1'">Logout</a></button>
         </div>
         <?php endif;
 }
