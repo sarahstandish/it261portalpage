@@ -35,6 +35,4 @@ function display_header($title) {
     </header>";
 }
 
-
-
 ?>

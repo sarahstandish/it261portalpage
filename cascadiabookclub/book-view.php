@@ -14,6 +14,9 @@ if (isset($_GET['id']) && $_GET['id'] <= get_table_length('books', $db)) {
 <h2><?php echo $title; ?></h2>
 
 <div class="main">
+    <div class='book-view-cover'>
+        <?php echo display_image($id, $title); ?>
+    </div>
     <div class="book-info">
         <p><span class="info-type">Author:</span> <?php echo $author; ?></p>
         <p><span class="info-type">Year published:</span> <?php echo $year_published; ?></p>
@@ -21,10 +24,6 @@ if (isset($_GET['id']) && $_GET['id'] <= get_table_length('books', $db)) {
         <p><span class="info-type">Synopsis:</span> <?php echo $about; ?></p>
         <p><span class="info-type"><a href='<?php echo $url; ?>'>Read reviews on Goodreads</a></span></p>
     </div>
-    <div class='book-view-cover'>
-        <?php echo display_image($id, $title); ?>
-    </div>
-
 </div>
 <?php 
 

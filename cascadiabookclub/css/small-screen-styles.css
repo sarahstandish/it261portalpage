@@ -1,28 +1,4 @@
-@media (max-width: 850px) {
-
-    aside {
-        background-color: var(--text-color);
-        color: var(--background-color);
-        font-family: var(--body-font);
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin: 0 auto;
-    }
-
-    .focus {
-        width: 100%;
-        font-size: 1em;
-        margin: 0 auto;
-        padding: 5px;
-    }
-    
-    img {
-        max-height: 300px;
-        margin: 0 auto;
-        padding: 5px;
-    }
-
+@media (max-width: 1063px) {
     nav {
         margin-top: 90px;
         display: flex;
@@ -77,7 +53,59 @@
         width: 100%;
         font-family: var(--title-font);
     }
+
+    .welcome-logout {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: 1px solid var(--accent-color-1);
+        padding: 10px;
+        margin: 0 auto;
+    }
     
+    .success {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: 1px solid blue;
+        padding: 10px;
+    }
+
+    header {
+        background-color: var(--text-color);
+        color: var(--background-color);
+        font-family: var(--title-font);
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 730px) {
+
+    aside {
+        background-color: var(--text-color);
+        color: var(--background-color);
+        font-family: var(--body-font);
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .focus {
+        width: 100%;
+        font-size: 1em;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    
+    img {
+        max-height: 300px;
+        margin: 0 auto;
+        padding: 5px;
+    }
+       
     body {
         background-color: var(--background-color);
         color: var(--text-color);
@@ -138,16 +166,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    
-    header {
-        background-color: var(--text-color);
-        color: var(--background-color);
-        font-family: var(--title-font);
-        text-align: center;
-        font-size: 1.5em;
-        margin-bottom: 10px;
-    }
-    
+       
     .front-page {
         width: 95%;
         padding: 0;
@@ -258,7 +277,7 @@
         font-size: 1.5em;
         margin: 5px;
         display: block;
-        max-width: 70%;
+        max-width: 95%;
     }
     
     .book-info p {
@@ -285,7 +304,7 @@
     }
     
     form {
-        max-width: 600px;
+        max-width: 95%;
         margin: 20px auto;
     }
     fieldset {
@@ -356,6 +375,7 @@
     .daily {
         border: 2px solid var(--text-color);
         border-radius: 3px;
+        max-width: 95%;
     }
     
     .Sunday {
@@ -412,22 +432,6 @@
     .centered {
         margin: 0 auto;
     }
-    
-    .welcome-logout {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        border: 1px solid var(--accent-color-1);
-        padding: 10px;
-        margin: 0 auto;
-    }
-    
-    .success {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        border: 1px solid blue;
-        padding: 10px;
-    }
+
 
 }

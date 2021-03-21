@@ -173,6 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit_conact_form']))
         ];
 
         mail($to, $subject, $body, $headers);
+        echo "Your form has been received.";
         header('Location:/it261/cascadiabookclub/thanks.php');
 
     }
