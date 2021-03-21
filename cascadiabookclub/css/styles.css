@@ -3,8 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     --background-color: #F1F2F6;;
-    --text-color: #085D05;
-    --accent-color-1: #0A0F70;
+    --text-color: #296e4e;
+    --accent-color-1: #2b31a1;
     --title-font: 'Syne', sans-serif;
     --body-font: 'Montserrat', sans-serif;
     font-family: var(--body-font);
@@ -90,7 +90,9 @@ h2 {
 }
 
 p {
-    font-family: var(--body-font)
+    font-family: var(--body-font);
+    color: rgb(44, 46, 45);
+    line-height: 1.4em;
 }
 
 .about {
@@ -342,32 +344,32 @@ form ul {
     border-radius: 3px;
 }
 
-.Sunday {
-    color: #6D2E46;
+#Sunday p{
+    color: #6D2E46 !important;
 }
 
-.Monday {
-    color: #002400;
+#Monday p {
+    color: #002400  !important;
 }
 
-.Tuesday {
-    color: #1982C4;
+#Tuesday p {
+    color: #1982C4 !important;
 }
 
-.Wednesday {
-    color: #E0A500;
+#Wednesday p {
+    color: #E0A500 !important;
 }
 
-.Thursday {
-    color: #23395B;
+#Thursday p {
+    color: #23395B !important;
 }
 
-.Friday {
-    color: #6969B3;
+#Friday p {
+    color: #6969B3 !important;
 }
 
-.Saturday {
-    color: #5F7481;
+#Saturday p {
+    color: #5F7481 !important;
 }
 
 .map {
@@ -412,54 +414,3 @@ form ul {
     padding: 10px;
 }
 
-@media (max-width: 850px) {
-    .main {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    aside {
-        background-color: var(--text-color);
-        color: var(--background-color);
-        font-family: var(--body-font);
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin: 0 auto;
-    }
-
-    .focus {
-        width: 100%;
-        font-size: 1em;
-        margin: 0 auto;
-        padding: 5px;
-    }
-    
-    .photo {
-        max-width: 95%;
-        margin: 0 auto;
-    }
-
-    img {
-        max-height: 300px;
-        margin: 0 auto;
-        /* border: 5px solid var(--text-color); */
-        padding: 5px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        background-color: var(--background-color);
-    }
-
-    .nav-button {
-        text-align: left;
-    }
-
-}

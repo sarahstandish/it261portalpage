@@ -41,7 +41,7 @@ display_header("{$day['day_name']} Book Recommendation");
 
 ?>
 <h2>Daily Book Recommendation: <?php echo "<span class={$day['day_name']}>{$day['day_name']}</span>"; ?></h2>
-<div class="main daily <?php echo $day['day_name']; ?>">
+<div class="main daily" id="<?php echo $day['day_name']; ?>">
     <div class="book-view-cover">
         <?php echo display_image($day['id'], $title); ?>
     </div>

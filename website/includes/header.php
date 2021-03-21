@@ -8,6 +8,7 @@ function display_header($title) {
         <title>$title</title>
         <link href='/it261/css/styles.css' type='text/css' rel='stylesheet'>
         <link href='/it261/website/css/styles.css' type='text/css' rel='stylesheet'>
+        <meta content='width=device-width, initial-scale=1' name='viewport' />
         <link rel='preconnect' href='https://fonts.gstatic.com'>
         <link href='https://fonts.googleapis.com/css2?family=Montserrat&family=Syne:wght@400;500&display=swap' rel='stylesheet'> 
     </head>
