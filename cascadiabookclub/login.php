@@ -23,6 +23,6 @@ display_header("Cascadia Book Club Login");
 </form>
 
 <p class="main about">Haven't registered?</p>
-<button class="centered"><a href="register.php">Register here</a></button>
+<a class="centered btn" href="register.php">Register here</a>
 
 <?php include 'includes/footer.php'; ?>

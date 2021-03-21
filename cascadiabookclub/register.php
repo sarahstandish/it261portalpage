@@ -32,6 +32,6 @@ display_header('Cascadia Book Club - Register');
 </div> 
 <!-- end wrapper -->
 <p class="main about">Already a member?</p>
-<button class="centered"><a href="/it261/cascadiabookclub/login.php">Log in</a></button>
+<a class="centered btn" href="/it261/cascadiabookclub/login.php">Log in</a>
 
 <?php include 'includes/footer.php' ?>

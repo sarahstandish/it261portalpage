@@ -295,13 +295,20 @@ input[type=text], input[type=email], input[type=number], input[type=password], i
     border-radius: 5px;
 }
 
+.greeting {
+    display: block;
+    font-size: 1.5em;
+}
 
-button {
+
+button, .btn, .logout-button {
     display: block;
     padding: 5px;
     margin-top: 5px;
     color: var(--background-color);
     background-color: var(--accent-color-1);
+    width: 75px;
+    text-align: center;
 }
 
 textarea {
@@ -387,6 +394,7 @@ form ul {
     font-family: var(--title-font);
     margin-top: 100px;
     font-size: 1.5em;
+    color: var(--text-color);
 }
 
 .map-description {

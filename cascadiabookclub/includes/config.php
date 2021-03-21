@@ -101,7 +101,7 @@ $frequency_err = "";
 
 $top_10_photos = "";
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit_conact_form'])) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit_contact_form'])) {
 
     // $post_array = $_POST;
     if (empty($_POST['first_name'])) {
@@ -248,9 +248,8 @@ function check_login() {
     
     if (isset($_SESSION['UserName'])) :?>
         <div class="welcome-logout">
-            <h3><?php echo "Hello, {$_SESSION['UserName']}"; ?>    
-            </h3>
-            <button><a href="/it261/cascadiabookclub/index.php?logout='1'">Logout</a></button>
+            <span class="greeting"><?php echo "Hello, {$_SESSION['UserName']}"; ?></span>
+            <a class='logout-button' href="/it261/cascadiabookclub/index.php?logout='1'">Logout</a>
         </div>
         <?php endif;
 }

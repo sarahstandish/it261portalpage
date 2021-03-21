@@ -1,6 +1,6 @@
 @media (max-width: 1063px) {
     nav {
-        margin-top: 90px;
+        margin-top: 65px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -61,6 +61,7 @@
         border: 1px solid var(--accent-color-1);
         padding: 10px;
         margin: 0 auto;
+        text-align: center;
     }
     
     .success {
@@ -69,6 +70,18 @@
         left: 10px;
         border: 1px solid blue;
         padding: 10px;
+    }
+
+    .logout-button {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .greeting {
+        display: inline;
+        font-size: 1.1em;
+        margin: 0 auto;
+        padding-right: 5%;
     }
 
     header {
@@ -327,16 +340,7 @@
         padding: 3px;
         border-radius: 5px;
     }
-    
-    
-    button {
-        display: block;
-        padding: 5px;
-        margin-top: 5px;
-        color: var(--background-color);
-        background-color: var(--accent-color-1);
-    }
-    
+       
     textarea {
         width: 100%;
         margin-bottom: 10px;

@@ -1,9 +1,6 @@
 <?php 
 session_start();
 include 'config.php';
-if (($_SERVER['PHP_SELF'] != '/it261/cascadiabookclub/login.php') && ($_SERVER['PHP_SELF'] != '/it261/cascadiabookclub/register.php')) {
-    check_login();
-}
 
 $FirstName = '';
 $LastName = '';

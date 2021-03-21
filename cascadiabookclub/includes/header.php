@@ -19,8 +19,11 @@ function display_header($title) {
         <link rel='preconnect' href='https://fonts.gstatic.com'>
         <link href='https://fonts.googleapis.com/css2?family=Montserrat&family=Syne:wght@400;500&display=swap' rel='stylesheet'> 
     </head>
-    <body>
-        <nav>";
+    <body>";
+    if (($_SERVER['PHP_SELF'] != '/it261/cascadiabookclub/login.php') && ($_SERVER['PHP_SELF'] != '/it261/cascadiabookclub/register.php')) {
+        check_login();
+    };
+    echo   "<nav>";
             foreach($nav2 as $name => $url) {
                 if ('THIS_PAGE' == $url) {
                     echo "<div class='dropdown-container nav-button'><a class='home-active' href='$url'>$name</a></div>";
