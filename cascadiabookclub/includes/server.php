@@ -85,7 +85,6 @@ if (isset($_POST['LoginUser'])) {
     }
 
     if (empty($errors)) {
-        echo "Errors are empty";
         $Password = md5($Password);
 
         $query = "SELECT * FROM users WHERE UserName = '$UserName' AND Password = '$Password'";

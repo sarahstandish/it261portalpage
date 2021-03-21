@@ -99,8 +99,6 @@ $agree_err = "";
 $phone_err = "";
 $frequency_err = "";
 
-$top_10_photos = "";
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit_contact_form'])) {
 
     // $post_array = $_POST;
@@ -166,7 +164,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit_contact_form'])
         $to = 'z.sisyphusrocks@gmail.com';
         date_default_timezone_set('America/Los_Angeles');
         $subject = "Test email " . date('m/d/y h:i:s A');
-        $body = "Hello {$_POST['first_name']} {$_POST['last_name']},\n Your email is {$_POST['email']}.\n Your phone number is {$_POST['phone']}.\n You searched for photos of {$_POST['search_term']} taken in {$_POST['location']} of at least {$_POST['frequency']} frequency.\n $your_photos \n Email sent from sarahstandish.com - contact form.";
+        $body = "Hello {$_POST['first_name']} {$_POST['last_name']},\n Your email is {$_POST['email']}.\n Your phone number is {$_POST['phone']}.\n You're interested in the regions: $your_regions. You're want to be updated {$_POST['frequency']}. \n Email sent from sarahstandish.com - contact form.";
         $headers = [
             'From' => 'no-reply@sarahstandish.com',
             'Reply-to' => 'standish.sm@gmail.com',
